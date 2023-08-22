@@ -18,7 +18,7 @@ export default defineComponent({
     ActionButton,
   },
   setup() {
-    const currentPeriod = ref("00:00:00");
+    const currentPeriod = ref("00:bara:00");
     const totalPeriod = ref("00:00:00");
 
     return { currentPeriod, totalPeriod };
