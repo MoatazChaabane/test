@@ -1,0 +1,71 @@
+#app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.stop-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.period {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.time-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.time-list th,
+.time-list td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.total-period {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+}
