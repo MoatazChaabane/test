@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="height: 100vh; width: 100vw; margin: 0; padding: 0;">
+  <div id="app" style=" margin: 0; padding: 0;">
 
     <!--        date de maintenant-->
 
@@ -10,21 +10,21 @@
     </div>
     <!--        stop button-->
 
-      <div
-          style="width: 86px; height: 38px; left: 552px; top: 2px; position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 5px; border: 0.50px #CC5252 solid">
-        <div class="button stop-button" @click="stopTimer" style="background: none; color: #CC5252;">
-          Stop
-        </div>
+    <div
+        style="width: 86px; height: 38px; left: 552px; top: 2px; position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 5px; border: 0.50px #CC5252 solid">
+      <div class="button stop-button" @click="stopTimer" style="background: none; color: #CC5252;">
+        Stop
       </div>
     </div>
+  </div>
 
-    <!--        start button-->
-      <div
-          style="width: 126px; height: 38px; left: 651px; top: 3px; position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 5px; border: 0.50px #60B669 solid">
-        <div class="button start-button" @click="startTimer" style="background: none;color:#60B669;">
-          Start Now
-        </div>
-      </div>
+  <!--        start button-->
+  <div
+      style="width: 126px; height: 38px; left: 651px; top: 3px; position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 5px; border: 0.50px #60B669 solid">
+    <div class="button start-button" @click="startTimer" style="background: none;color:#60B669;">
+      Start Now
+    </div>
+  </div>
   <!--      timer-->
   <div style="left: 809px; top: 8px; position: absolute"><span
       style="color: #60B669; font-size: 25px; font-family: Roboto; font-weight: 900; word-wrap: break-word">{{
