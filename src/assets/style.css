@@ -1,78 +1,71 @@
+/* Styles généraux pour l'application */
 #app {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
 }
-body {
-    margin: 0;
-    padding: 0;
+
+/* Styles pour la date de maintenant */
+.current-date {
+    left: 0;
+    top: 0;
+    position: absolute;
+    color: #415C73;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 900;
+    word-wrap: break-word;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.date {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-
+/* Styles pour les boutons */
 .button {
     display: flex;
     align-items: center;
-    padding: 8px 12px;
+    justify-content: center;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.start-button {
-    background-color: #4caf50;
-    color: white;
+    padding: 8px 12px;
 }
 
 .stop-button {
-    background-color: #f44336;
-    color: white;
+    width: 86px;
+    height: 38px;
+    left: 552px;
+    top: 2px;
+    position: absolute;
+    background: none;
+    color: #CC5252;
+    border: 0.50px #CC5252 solid;
 }
 
-.icon {
-    margin-right: 5px;
+.start-button {
+    width: 126px;
+    height: 38px;
+    left: 651px;
+    top: 3px;
+    position: absolute;
+    background: none;
+    color: #60B669;
+    border: 0.50px #60B669 solid;
 }
 
-.period {
-    font-size: 20px;
-    font-weight: bold;
-    color: #4caf50;
-    margin-bottom: 10px;
+/* Styles pour le timer */
+.timer {
+    left: 809px;
+    top: 8px;
+    position: absolute;
+    color: #60B669;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 900;
+    word-wrap: break-word;
 }
 
-.time-list {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
+/* Styles pour le tableau */
+/* ... Autres styles ... */
 
-.time-list th,
-.time-list td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: center;
-}
-
-.total-period {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4caf50;
-}
+/* Styles pour le tableau */
 .table-container {
     width: 1080px;
     height: 227px;
@@ -80,24 +73,27 @@ body {
     left: 0;
     top: 137px;
 }
+
 .table {
     width: 100%;
     height: 100%;
     border-collapse: separate;
     border-spacing: 0;
-
 }
+
 .table td {
     position: relative;
     padding: 0;
     border: 1px solid #60B669;
-    border-left: none; /* Supprime la bordure à gauche */
-    border-right: none; /* Supprime la bordure à droite */
+    border-left: none;
+    border-right: none;
 }
+
 .table .inner {
     padding: 0;
     position: relative;
 }
+
 .table .period {
     font-size: 16px;
     font-family: Roboto;
@@ -105,18 +101,15 @@ body {
     word-wrap: break-word;
     color: #6D7783;
 }
+
 .table .time {
     font-size: 25px;
     font-family: Roboto;
     font-weight: 900;
     word-wrap: break-word;
+    text-align: right;
 }
-.table .time-sub {
-    font-size: 25px;
-    font-family: Roboto;
-    font-weight: 300;
-    word-wrap: break-word;
-}
+
 .table .description {
     font-size: 14px;
     font-family: Roboto;
@@ -124,12 +117,29 @@ body {
     word-wrap: break-word;
     color: #6B7581;
 }
+
 .table .green {
     color: #60B669;
 }
-.table .blue {
-    color: #415C73;
+
+/* Styles pour la partie Total */
+.total-title {
+    color: #6A7480;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: right;
 }
-.table .gray {
-    color: #999999;
+
+.total-time {
+    color: #60B669;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: right;
 }
+
+/* ... Autres styles ... */
+
